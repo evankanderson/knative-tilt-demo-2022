@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {CssBaseline} from '@material-ui/core';
+import {CssBaseline} from '@mui/material';
 import logo from './logo.svg';
 import './App.css';
 import {MessageList} from './components/MessageList';
