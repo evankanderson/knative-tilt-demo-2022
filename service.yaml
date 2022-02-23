@@ -4,11 +4,6 @@ metadata:
   name: tilt-demo
 spec:
   template:
-    metadata:
-      annotations:
-        # Bound number of replicas to enable Tilt features
-        autoscaling.knative.dev/min-scale: "1"
-        autoscaling.knative.dev/max-scale: "1"
     spec:
       containers:
       - image: registry.kn-tilt.majordemo.com/tilt-demo-2022:first
