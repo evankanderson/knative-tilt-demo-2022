@@ -34,10 +34,17 @@
   padding: 1ex 2ex;
 }
 
+.item-card {
+  background-color: white;
+  margin: 8pt;
+}
+
 .item-flexbox {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  background-color: bisque;
+  padding: 8pt;
 }
 
 .Card--text {
