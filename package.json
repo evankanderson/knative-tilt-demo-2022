@@ -17,8 +17,11 @@
     "fix": "gts fix",
     "prepare": "npm run compile",
     "pretest": "npm run compile",
-    "posttest": "npm.cmd run lint",
-    "start": "concurrently \"tsc -w\" \"nodemon build/index.js\""
+    "posttest": "npm run lint",
+    "dev-start": "concurrently \"tsc -w\" \"nodemon build/index.js\"",
+    "react-subdir": "cd client && npm run start-react",
+    "start": "concurrently \"tsc -w\" \"nodemon build/index.js\" \"npm run react-subdir\"",
+    "prod-start": "nodemon build/index.js"
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",
